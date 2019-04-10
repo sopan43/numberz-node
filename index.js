@@ -52,8 +52,25 @@ function powOf(base, power) {
     return result;
 }
 
+function factorialOf(number) {
+    let result = {};
+    if (isNaN(number) || number < 0 ) {
+        result.error = "Input Should be a Positive Number";
+    } else if (number == 0){
+    	result.answer = 1;
+    } 
+    else {
+    	let fact =1 ;
+    	for(let i=1;i<=number;i++)
+    		fact = fact * i;
+        result.answer = fact;
+    }
+    return result;
+}
+
 module.exports.sqrtOf = sqrtOf;
 module.exports.sqOf = sqOf;
 module.exports.twoPower = twoPower;
 module.exports.tenPower = tenPower;
 module.exports.powOf = powOf;
+module.exports.factorialOf = factorialOf;
