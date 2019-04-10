@@ -1,0 +1,19 @@
+{
+  "name": "numberz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sopan43/numberz-node.git"
+  },
+  "author": "Sopan Mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sopan43/numberz-node/issues"
+  },
+  "homepage": "https://github.com/sopan43/numberz-node#readme"
+}
