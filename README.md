@@ -3,6 +3,9 @@ Numberz
 
 Module to [node.js](http://nodejs.org/) perform mathematical operations at easy.
 
+Using the [bn.js](https://www.npmjs.com/package/bn.js) module it can return numbers
+of any size without being limited by the hardcoded javascript `Number.MAX_LIMIT`.
+
 Usage
 -----
 
@@ -13,14 +16,14 @@ Find factorial of a number:
 
 ```js
 const numberz = require ('numberz');
-const factorial = numberz.factorialOf(10);
+const factorial = numberz.factorialOf(50);
 console.log (factorial);
 ```
 
 Result:
 
 ```js
-{ answer: 3628800 }
+Calling factorialOf for 50 { answer: '30414093201713378043612608166064768844377641568960512000000000000' }
 ```
 Error:
 ```js

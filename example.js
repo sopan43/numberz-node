@@ -10,7 +10,7 @@ console.log("Calling sqOf for String", numberz.sqOf('wertyuiuy'));
 console.log("Calling sqOf for String Number 9", numberz.sqOf('9'));
 console.log("Calling sqOf for -3", numberz.sqOf(-3));
 console.log();
-console.log("Calling factorialOf for 5", numberz.factorialOf(5));
+console.log("Calling factorialOf for 50", numberz.factorialOf(50));
 console.log("Calling factorialOf for String", numberz.factorialOf('wertyuiuy'));
 console.log("Calling factorialOf for String Number 9", numberz.factorialOf('9'));
 console.log("Calling factorialOf for -3", numberz.factorialOf(-3));
