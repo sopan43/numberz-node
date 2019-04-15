@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sopan43/numberz-node/issues"
   },
-  "homepage": "https://github.com/sopan43/numberz-node#readme"
+  "homepage": "https://github.com/sopan43/numberz-node#readme",
+  "dependencies": {
+    "bn.js": "^4.11.8"
+  }
 }

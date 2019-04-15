@@ -1,3 +1,5 @@
+const BN = require('bn.js');
+
 function sqrtOf(number) {
     let result = {};
     if (isNaN(number) || number < 0) {
@@ -22,7 +24,7 @@ function sqOf(number) {
 
 function twoPower(number) {
     let result = {};
-    if (isNaN(number) ) {
+    if (isNaN(number)) {
         result.error = "Input Should be a Number";
     } else {
         let powOfAnswer = powOf(2, number);
@@ -33,7 +35,7 @@ function twoPower(number) {
 
 function tenPower(number) {
     let result = {};
-    if (isNaN(number) ) {
+    if (isNaN(number)) {
         result.error = "Input Should be a Number";
     } else {
         let powOfAnswer = powOf(10, number);
@@ -54,16 +56,20 @@ function powOf(base, power) {
 
 function factorialOf(number) {
     let result = {};
-    if (isNaN(number) || number < 0 ) {
+    if (isNaN(number) || number < 0) {
         result.error = "Input Should be a Positive Number";
-    } else if (number == 0){
-    	result.answer = 1;
-    } 
-    else {
-    	let fact =1 ;
-    	for(let i=1;i<=number;i++)
-    		fact = fact * i;
-        result.answer = fact;
+    } else if (number == 0) {
+        result.answer = 1;
+    } else {
+        let fact = new BN('1', 16);
+        let i = new BN('1', 16);
+        const one = new BN('1', 16);
+        while (number--) {
+            fact = fact.mul(i);
+            i = i.add(one)
+
+        }
+        result.answer = fact.toString(10);
     }
     return result;
 }
