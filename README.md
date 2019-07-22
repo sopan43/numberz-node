@@ -1,4 +1,6 @@
 Numberz
+
+
 =========
 
 Module to [node.js](http://nodejs.org/) perform mathematical operations at easy.
@@ -23,7 +25,7 @@ console.log (factorial);
 Result:
 
 ```js
-Calling factorialOf for 50 { answer: '30414093201713378043612608166064768844377641568960512000000000000' }
+{ answer: '30414093201713378043612608166064768844377641568960512000000000000' }
 ```
 Error:
 ```js
